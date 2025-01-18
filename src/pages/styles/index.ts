@@ -11,6 +11,7 @@ export const { styled, getCssText, globalCss } = createStitches({
       black900: '#0F0F0F',
 
       gray100: '#F8F1FF',
+      gray200: '#A1A6B4',
       gray900: '#656176',
 
       black: '#040303',
