@@ -28,9 +28,11 @@ export const { styled, getCssText, globalCss } = createStitches({
 
       oxfordBlue500: '#0A1128',
 
+      violetBlue400: '#826AED',
       violetBlue500: '#3943B7',
       violetBlue800: '#8963BA',
       violetBlue900: '#54428E',
+      
 
       red500: '#D52941',
       red600: '#DB2B39',

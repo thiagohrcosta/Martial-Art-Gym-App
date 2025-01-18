@@ -1,18 +1,28 @@
-import { CardCallToActionContainer, CardContainer, CardDescription, CardStyles } from "./styles";
+import Image from "next/image";
+import { CardCallToActionContainer, CardContainer, CardDescription, CardStyles } from "./cardStyles";
 
-export function Cards() {
+import NoGi from '../../../assets/img/nogi.png'
+import JiuJitsu from '../../../assets/img/jj.png'
+interface CardProps {
+  imgUrl: String,
+  title: String
+}
+
+export function Cards({ imgUrl, title}: CardProps) {
   return (
     <>
       <CardStyles>
         <CardContainer>
-          <img 
-            src="https://images.unsplash.com/photo-1676220672943-5100a727ba36?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          <Image
+            width={100}
+            height={100}
+            src={title === 'No-Gi' ? NoGi : JiuJitsu}
+            alt={title}
           />
           <CardDescription>
-            <h2>Jiu-Jitsu</h2>
+            <h2>{title}</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sapien ligula, 
-              aliquet at congue sed, mollis eget turpis. Maecenas faucibus justo erat, 
-              et finibus dui congue non. Aenean blandit venenatis quam at viverra. 
+              aliquet at congue sed, mollis eget turpis.
             </p>
             <CardCallToActionContainer>
               <button>See more</button>

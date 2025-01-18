@@ -39,6 +39,11 @@ export const CardCallToActionContainer = styled('div', {
     borderRadius: 8,
     border: 'none',
     background: '$lightGreen200',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    
+    '&:hover': {
+      opacity: '0.9'
+    }
   }
+
 })
