@@ -24,3 +24,7 @@ export const BannerContainer = styled('div', {
     fontWeight: 'lighter'
   }
 })
+
+
+export const HeroBackground = styled('div', {
+})
